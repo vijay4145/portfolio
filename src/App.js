@@ -10,6 +10,9 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import './style/Homepage.css'
 import { Skills } from './components/Skills';
+import { About } from './components/About';
+import { Achievements } from './components/Achievements';
+import { Projects } from './components/Projects';
 
 
 function App() {
@@ -54,32 +57,10 @@ function App() {
       <Lottie animationData={web_animation} className='mt-10 max-sm:h-41'/>
     </div>
 
-    <div id='achievements' className='mt-1 p-5 text-lg flex flex-col flex-wrap'>
-      <h5>𝘼𝙘𝙝𝙞𝙚𝙫𝙚𝙢𝙚𝙣𝙩𝙨 :</h5>
-      <div data-aos="fade-right" id='tag' className='flex flex-wrap gap-3'>
-        <div className='bg-purple-200 max-w-fit px-3 py-1 rounded-lg shadow-md'>
-          2nd Rank in SIES bug4ever
-        </div>
-        <div className='bg-purple-200 max-w-fit px-3 py-1 rounded-lg shadow-md'>
-          Global Rank 184 in Coderush
-        </div>
-        <div className='bg-purple-200 max-w-fit px-3 py-1 rounded-lg shadow-md'>
-          Global rank 96 in Codechef contest
-        </div>
-        <div className='bg-purple-200 max-w-fit px-3 py-1 rounded-lg shadow-md'>
-          594⭐ in GeeksforGeeks
-        </div>
-        <div className='bg-purple-200 max-w-fit px-3 py-1 rounded-lg shadow-md'>
-          Selected for SIH hackathon (institute level)
-        </div>
-      </div>
-    </div>
-    <div id='about' className='p-5 text-lg flex flex-col flex-wrap items-center text-center'>
-      <h5 className='text-2xl'>𝐀𝐛𝐨𝐮𝐭 :</h5>
-      <p>Hello, I am Compter Engineering student at Terna Engineering College and I'm passionate in developing Android apps. Along with this I'm also a Competitive programmer with some knowledge of Web Development. I love to code and I consider Android Development to be an incredibly creative discipline that makes difference in people's lives. I enjoy creating application which will be able to impact many user.</p>
-
-    </div>
+    <Achievements/>
+    <About/>
    <Skills/>
+   <Projects/>
  </div>
 
 

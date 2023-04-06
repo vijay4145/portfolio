@@ -1,0 +1,19 @@
+.projectMainDiv:hover{
+    /* box-shadow: rgb(249 112 87 / 43%) 0px 6px 9px; */
+    transform: translateY(-1px); 
+    box-shadow: 0 3px 10px rgb(119, 116, 116);
+}
+
+.projectMainDiv{
+    /* border: 1px solid whitesmoke; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.linkButton{
+    @apply shadow-md rounded-lg px-3 py-2 text-white max-w-fit bg-purple-400 flex gap-2 items-center
+}
+
+.linkButton:hover{
+    box-shadow: rgba(222, 87, 249, 0.43) 0px 6px 9px;
+    transform: translateY(-1px);
+}

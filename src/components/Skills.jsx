@@ -7,7 +7,7 @@ export const Skills = () => {
     <>
      <div id='about' className='p-5 text-lg flex flex-col flex-wrap items-center text-center justify-center gap-2'>
       <h5 className='text-2xl'>𝐒𝐤𝐢𝐥𝐥𝐬 :</h5>
-      <div className='grid md:grid-cols-5  sm:grid-cols-3 grid-cols-2 gap-5'>
+      <div className='grid md:grid-cols-5 max-sm:text-base  sm:grid-cols-3 grid-cols-2 gap-5'>
         <div className='skills-card'>
           <img src={java_icon} alt="" className='h-7 w-7'/>
           Java
