@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { ProjectCard } from './ProjectCard'
 import { useInView } from 'react-intersection-observer';
+import {  Element } from 'react-scroll';
+
 
 export const Projects = ({setComponentVisible}) => {
   const { ref, inView } = useInView({threshold: 0});
@@ -10,12 +12,14 @@ export const Projects = ({setComponentVisible}) => {
 
   return (
     <>
-     <div ref={ref} id='about' className='p-5  flex flex-col flex-wrap items-center justify-center gap-2'>
+    <div ref={ref}>
+
+     <Element name='project' className='p-5  flex flex-col flex-wrap items-center justify-center gap-2'>
       <h5 className='text-3xl'>ᴘʀᴏᴊᴇᴄᴛꜱ :</h5>
       <div className='grid gap-5 mt-4'>
         {
           projectData.map((data, i)=>{
-            return <ProjectCard data={data} key={i}/>
+            return <ProjectCard data={data} key={i} setComponentVisible={setComponentVisible}/>
           })
         }
       </div>
@@ -23,6 +27,7 @@ export const Projects = ({setComponentVisible}) => {
         +5 More Repositories on Github
       </a>
 
+    </Element>
     </div>
     </>
   )

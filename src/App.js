@@ -16,6 +16,8 @@ import { Projects } from './components/Projects';
 import { Footer } from './components/Footer';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import {  Element } from 'react-scroll';
+
 
 function App() {
   const [componentVisible, setComponentVisible] = useState(0);
@@ -25,7 +27,7 @@ function App() {
   });
   const { ref, inView } = useInView({threshold: 0});
   useEffect(() => {
-    if(inView === 1) setComponentVisible(0);
+    if(inView) setComponentVisible(0);
   }, [inView])
   
 
@@ -36,7 +38,9 @@ function App() {
       <div data-aos="fade-down" className='fixed z-10 top-0 bg-homepage2 overflow-hidden'>
         <Navbar componentVisible={componentVisible}/>
       </div>
-    <div ref={ref} data-aos="fade-down" className='max-sm:flex-col-reverse m-1 bg-homepage flex justify-between -z-10  bg-blue-800 shadow-2xl min-h-[60vh] items-center overflow-hidden'>
+
+    <div ref={ref}>
+    <Element name='home' data-aos="fade-down" className='max-sm:flex-col-reverse m-1 bg-homepage flex justify-between -z-10  bg-blue-800 shadow-2xl min-h-[60vh] items-center overflow-hidden'>
       <div data-aos="fade-up-right" className='flex flex-col justify-center p-6 gap-5 md:mt-10 max-sm:-mt-10'>
         <div className='flex flex-col gap-4'>
           <h1 className='md:text-6xl text-4xl font-bold text-white'>𝙑𝙞𝙟𝙖𝙮 𝙂𝙪𝙥𝙩𝙖</h1>
@@ -63,6 +67,7 @@ function App() {
         </a>
       </div>
       <Lottie animationData={web_animation} className='mt-10 max-sm:h-41'/>
+    </Element>
     </div>
 
     <Achievements/>
