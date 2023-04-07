@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { ProjectCard } from './ProjectCard'
+import { useInView } from 'react-intersection-observer';
 
-export const Projects = () => {
+export const Projects = ({setComponentVisible}) => {
+  const { ref, inView } = useInView({threshold: 0});
+  useEffect(() => {
+    if(inView) setComponentVisible(2);
+  }, [inView])
+
   return (
     <>
-     <div id='about' className='p-5  flex flex-col flex-wrap items-center justify-center gap-2'>
+     <div ref={ref} id='about' className='p-5  flex flex-col flex-wrap items-center justify-center gap-2'>
       <h5 className='text-3xl'>ᴘʀᴏᴊᴇᴄᴛꜱ :</h5>
       <div className='grid gap-5 mt-4'>
         {
@@ -28,7 +34,7 @@ const projectData = [
     img: 'https://cdn-icons-png.flaticon.com/512/2293/2293843.png',
     name: 'Terna Web',
     desc: "ChatX is an social media app which lets you chat with other user without the need to save anyones numbers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, a.",
-    tags : ['MongDb', 'Reacjs', 'Nodejs', 'Express', 'axios'],
+    tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
     link : 'https://ternaweb.netlify.app/',
     github : 'https://github.com/vijay4145/TernaWeb'
   },
@@ -36,7 +42,7 @@ const projectData = [
     img: 'https://cdn-icons-png.flaticon.com/512/4997/4997543.png',
     name: 'Coder Buddy',
     desc: "ChatX is an social media app which lets you chat with other user without the need to save anyones numbers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, a.",
-    tags : ['MongDb', 'Reacjs', 'Nodejs', 'Express', 'axios'],
+    tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
     link : 'https://coderbuddy.netlify.app/',
     github : 'https://github.com/vijay4145/TernaWeb'
   },

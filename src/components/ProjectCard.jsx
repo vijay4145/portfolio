@@ -4,9 +4,6 @@ import { FaDownload, FaLink } from 'react-icons/fa'
 import { DiGithubAlt } from 'react-icons/di';
 
 export const ProjectCard = ({data}) => {
-  useEffect(() => {
-    console.log(data);
-  }, [])
   
   return (
     <>
