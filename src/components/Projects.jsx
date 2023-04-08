@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { ProjectCard } from './ProjectCard'
 import { useInView } from 'react-intersection-observer';
 import {  Element } from 'react-scroll';
+import { AiFillGithub } from "react-icons/ai";
 
 
 export const Projects = ({setComponentVisible}) => {
@@ -23,8 +24,9 @@ export const Projects = ({setComponentVisible}) => {
           })
         }
       </div>
-      <a href='https://github.com/vijay4145?tab=repositories' target='_blank' className=' m-3 rounded-lg text-purple-600 underline text-lg hover:text-purple-700 cursor-pointer'>
-        +5 More Repositories on Github
+      <a href='https://github.com/vijay4145?tab=repositories' target='_blank' className='flex gap-2 items-center m-3 rounded-lg text-purple-600 underline text-lg hover:text-purple-700 cursor-pointer'>
+        <AiFillGithub className='h-5 w-5'/>
+        View more on Github.com
       </a>
 
     </Element>
