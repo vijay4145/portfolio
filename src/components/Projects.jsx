@@ -40,7 +40,7 @@ const projectData = [
   {
     img: 'https://cdn-icons-png.flaticon.com/512/2293/2293843.png',
     name: 'Terna Web',
-    desc: "ChatX is an social media app which lets you chat with other user without the need to save anyones numbers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, a.",
+    desc: "TernaWeb reduces the tedious work of promoting events that are outside of college but are of very much importance like intercollege coding competition.Lists all the committees of our college. It also helps student to exchange the experiments and assignments.",
     tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
     link : 'https://ternaweb.netlify.app/',
     github : 'https://github.com/vijay4145/TernaWeb'
@@ -48,7 +48,7 @@ const projectData = [
   {
     img: 'https://cdn-icons-png.flaticon.com/512/4997/4997543.png',
     name: 'Coder Buddy',
-    desc: "ChatX is an social media app which lets you chat with other user without the need to save anyones numbers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, a.",
+    desc: "-	CoderBuddy helps to find the local community or local people who are nearest to you matching your interest in techstack or framework.	Users will also be able to form a team with them.",
     tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
     link : 'https://coderbuddy.netlify.app/',
     github : 'https://github.com/vijay4145/TernaWeb'
