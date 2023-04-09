@@ -53,10 +53,10 @@ export const Navbar = (props) => {
             >
               Project
             </Link>
-            <li className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
+            <a href="#" className="py-1 px-5 cursor-pointer hover:underline flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
               <AiOutlineDownload />
               𝚁𝚎𝚜𝚞𝚖𝚎
-            </li>
+            </a>
           </ul>
         </div>
       </div>
@@ -114,10 +114,10 @@ export const Navbar = (props) => {
               Project
             </Link>
             <hr className="bg-white w-[50%]" />
-            <li className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
+            <a href="#" className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
               <AiOutlineDownload />
               𝚁𝚎𝚜𝚞𝚖𝚎
-            </li>
+            </a>
           </ul>
         </div>
       </div>
