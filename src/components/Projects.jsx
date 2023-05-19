@@ -46,11 +46,19 @@ const projectData = [
     github : 'https://github.com/vijay4145/TernaWeb'
   },
   {
+    img: 'ays',
+    name: 'Ask Your Senior',
+    desc: "-	Ask Your Senior is a android application to build an collaborative environment in an organization. It's features includes Collab with senior for Project and Ask old academics books from them",
+    tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
+    link : 'https://askyoursenior.netlify.app/',
+    github : 'https://github.com/vijay4145/Ask-Your-Senior-web'
+  },
+  {
     img: 'https://cdn-icons-png.flaticon.com/512/4997/4997543.png',
     name: 'Coder Buddy',
     desc: "-	CoderBuddy helps to find the local community or local people who are nearest to you matching your interest in techstack or framework.	Users will also be able to form a team with them.",
     tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
     link : 'https://coderbuddy.netlify.app/',
-    github : 'https://github.com/vijay4145/TernaWeb'
+    github : 'https://github.com/vijay4145/CoderBuddy'
   },
 ]

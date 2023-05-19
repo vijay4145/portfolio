@@ -3,6 +3,7 @@ import '../style/ProjectCard.css';
 import { FaDownload, FaLink } from 'react-icons/fa'
 import { DiGithubAlt } from 'react-icons/di';
 import { useInView } from 'react-intersection-observer';
+import  ays from '../assets/ays_logo.png';
 
 export const ProjectCard = ({data, setComponentVisible}) => {
   const { ref, inView } = useInView({threshold: 0});
@@ -14,7 +15,7 @@ export const ProjectCard = ({data, setComponentVisible}) => {
   return (
     <>
     <div ref={ref} data-aos="fade-right" className='projectMainDiv flex md:flex-row flex-col px-2 py-2 rounded-3xl max-w-5xl justify-center items-center gap-1'>
-        <img src={data.img} alt=""  className="h-52 w-52" />
+        <img src={`${data.img === 'ays' ? ays: data.img}`} alt=""  className={`${data.img === 'ays' ? 'h-32 w-48':'h-52 w-52'} `} />
         <div className='flex flex-col gap-2 h-full justify-center'>
             <h4 className='text-2xl'>{data.name}</h4>
             <p className=' text-gray-600'>{data.desc}</p>
