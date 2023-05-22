@@ -50,7 +50,7 @@ const projectData = [
     name: 'Ask Your Senior',
     desc: "-	Ask Your Senior is a android application to build an collaborative environment in an organization. It's features includes Collab with senior for Project and Ask old academics books from them",
     tags : ['MongDb', 'Reactjs', 'Nodejs', 'Express', 'axios'],
-    link : 'https://askyoursenior.netlify.app/',
+    link : 'https://askyoursenior.netlify.app/?college=Terna%20Engineering%20College&branch=computer-engineering&sem=7',
     github : 'https://github.com/vijay4145/Ask-Your-Senior-web'
   },
   {
