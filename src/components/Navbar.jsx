@@ -114,7 +114,7 @@ export const Navbar = (props) => {
               Project
             </Link>
             <hr className="bg-white w-[50%]" />
-            <a href="https://drive.google.com/file/d/1IeZhEVyJFVRs5EGLESHRp4koZ5qXy_Jg/view?usp=sharing" className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
+            <a href="https://drive.google.com/file/d/1qQvemmaJIzXWeNstAxI_bftL3cfEdkJN/view?usp=sharing" className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
               <AiOutlineDownload />
               𝚁𝚎𝚜𝚞𝚖𝚎
             </a>
