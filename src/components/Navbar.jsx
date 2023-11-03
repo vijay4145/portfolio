@@ -7,6 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Navbar = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const resumeUrl = "https://drive.google.com/file/d/13AB1U_3UZrgMtDM8-bNHM1mxmYZ5kR6a/view?usp=sharing"
   return (
     <>
       <div className="p-1 w-screen z-10 hidden md:flex items-center">
@@ -53,7 +54,7 @@ export const Navbar = (props) => {
             >
               Project
             </Link>
-            <a href="https://app.enhancv.com/share/d08560f5" className="py-1 px-5 cursor-pointer hover:underline flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
+            <a href={resumeUrl} className="py-1 px-5 cursor-pointer hover:underline flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
               <AiOutlineDownload />
               𝚁𝚎𝚜𝚞𝚖𝚎
             </a>
@@ -114,7 +115,7 @@ export const Navbar = (props) => {
               Project
             </Link>
             <hr className="bg-white w-[50%]" />
-            <a href="https://app.enhancv.com/share/d08560f5" className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
+            <a href={resumeUrl} className="py-1 px-5 flex items-center m-2 gap-2 bg-blue-500 text-lg text-white rounded-lg">
               <AiOutlineDownload />
               𝚁𝚎𝚜𝚞𝚖𝚎
             </a>
